@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Your+Selected+Font&display=swap" rel="stylesheet">
+    <link rel='icon' type='image/x-icon' href='assets/newtitleImg.png' />
+    <link rel="stylesheet" href="style.css">
+
+    <title>WakeMeUp!</title>
+</head>
+<body>
+<main class="clock-container ">
+    <section class="display-container">
+    <div>
+        <h1 id="title">WAKE ME UP!</h1>
+        <img id="titleImage" src="assets/newtitleImg.png" alt="Alarm Clock">
+    </div>
+    </section>
+    <div>
+        <h2 id="ongoingTime">00:00:00</h2>
+    </div>
+
+    <section class="set-alarm-container">
+        <div class="SelectTime">
+            <select  id="hr">
+                <option value="Hour"  selected hidden> Hour </option>
+            </select>
+        </div>
+        <div class="SelectTime">
+            <select  id="min">
+                <option value="Minute"  selected hidden> Minute </option>
+            </select>
+        </div>
+        <div class="SelectTime">
+            <select  id="ampm">
+                <option value="AM/PM"  selected hidden> AM/PM </option>
+            </select>
+        </div>
+        <div class="setButton">
+            <button id="setBtn"> Set Alarm </button>
+        </div>
+    </section>
+         <p class="made-by">
+        Crafted with <span>♥</span> by <span>Manoj Pant</span> 
+        </p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
