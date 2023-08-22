@@ -22,12 +22,12 @@ body {
     text-align: center;
     min-height: 80vh;
     width: 80vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 10px;
     }
-
+ 
     .display-container {
         margin-top: 0;
         display: flex;
@@ -67,6 +67,9 @@ body {
         margin-top: 0;
         color:azure ;
     }
+    #title:hover{
+        color: rgb(243, 215, 179);
+    }
 
     #ongoingTime {
     color:azure ;
@@ -76,7 +79,7 @@ body {
     margin-top: 0;
     }
 
-.SelectTime {
+.SelectMenu {
     display: inline-block;
     margin: 5px;
 }
@@ -128,3 +131,7 @@ button:hover {
     color: red;
     font-size: 18px;
   }
+ .select.disable{
+    opacity: 0.5;
+    pointer-events: none;
+ }

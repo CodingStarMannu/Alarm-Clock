@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Your+Selected+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel='icon' type='image/x-icon' href='assets/newtitleImg.png' />
     <link rel="stylesheet" href="style.css">
 
@@ -21,18 +21,18 @@
         <h2 id="ongoingTime">00:00:00</h2>
     </div>
 
-    <section class="set-alarm-container">
-        <div class="SelectTime">
-            <select  id="hr">
+    <section class="content">
+        <div class="SelectMenu">
+            <select >
                 <option value="Hour"  selected hidden> Hour </option>
             </select>
         </div>
-        <div class="SelectTime">
-            <select  id="min">
+        <div class="SelectMenu">
+            <select  id="minute">
                 <option value="Minute"  selected hidden> Minute </option>
             </select>
         </div>
-        <div class="SelectTime">
+        <div class="SelectMenu">
             <select  id="ampm">
                 <option value="AM/PM"  selected hidden> AM/PM </option>
             </select>
@@ -41,6 +41,7 @@
             <button id="setBtn"> Set Alarm </button>
         </div>
     </section>
+        <div class="alarm-container"></div>
          <p class="made-by">
         Crafted with <span>♥</span> by <span>Manoj Pant</span> 
         </p>
