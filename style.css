@@ -49,7 +49,7 @@ body {
         
     }
 
-    @keyframes shake {
+    @keyframes shake-loop {
         0% { transform: rotate(0deg); }
         20% { transform: rotate(-10deg); }
         40% { transform: rotate(10deg); }
@@ -57,7 +57,9 @@ body {
         80% { transform: rotate(10deg); }
         100% { transform: rotate(0deg); }
     }
-
+    .shake {
+        animation: shake-loop 0.4s infinite; 
+    }
     #titleImage:hover {
         animation: shake 0.4s;
     }
@@ -131,6 +133,7 @@ button:hover {
     color: red;
     font-size: 18px;
   }
+
  .select.disable{
     opacity: 0.5;
     pointer-events: none;
