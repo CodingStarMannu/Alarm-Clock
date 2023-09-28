@@ -10,6 +10,7 @@ const allAlarm = document.querySelector(".allAlarm");
 let alarmTime;
 let isAlarmSet = false;
 let ringtone = new Audio("./assets/Believer.mp3");
+let alarmTimes = JSON.parse(localStorage.getItem("alarms")) || [];
 
 // Populating hour options in the dropdown
 for (let i = 12; i > 0; i--) {
@@ -75,21 +76,6 @@ setInterval(() => {
         ringtone.play();
         ringtone.loop = true;
         document.getElementById("titleImage").classList.add("shake");
-
-        // Stop the ringtone after 1 minute, remove effects, and reset alarms
-        setTimeout(() => {
-            ringtone.pause();
-            ringtone.currentTime = 0; // Reset the audio playback to the beginning
-            ringtone.loop = false;
-            isAlarmSet = false; // Reset the alarm status
-            for (let i = 0; i < selectMenu.length; i++) {
-                selectMenu[i].disabled = false;
-            }
-            setAlarmButton.innerText = "Set Alarm";
-            allAlarm.innerHTML = "";
-            alarmTime = "";
-            document.getElementById("titleImage").classList.remove("shake");
-        }, 60000);
     }
 }, 1000);
 
@@ -126,5 +112,8 @@ function setAlarm() {
     }
 }
 
+
 // Event listener for the Set Alarm button
 setAlarmButton.addEventListener('click', setAlarm);
+
+
